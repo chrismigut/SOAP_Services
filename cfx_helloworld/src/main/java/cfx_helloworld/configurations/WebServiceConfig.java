@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import org.apache.cxf.jaxws.EndpointImpl;
+
 import cfx_helloworld.endpoints.HelloWS;
 
 @Configuration
@@ -17,7 +19,7 @@ public class WebServiceConfig {
 	
 	@Bean
 	public Endpoint binding(){
-		Endpoint endpoint = new org.apache.cxf.jaxws.EndpointImpl(bus, new HelloWS());
+		Endpoint endpoint = new EndpointImpl(bus, new HelloWS());
 		endpoint.publish("/hello");
 		return endpoint;
 		
