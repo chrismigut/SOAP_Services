@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: customer_order_ws
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: cmigu
+Implementation-Vendor-Id: services.binarybyte
+Build-Jdk: 1.8.0_152
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/customer_order_ws
+Created-By: Maven Integration for Eclipse
+
